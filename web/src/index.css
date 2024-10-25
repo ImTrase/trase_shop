@@ -1,0 +1,32 @@
+/*  Custom font face font */
+@font-face {
+  font-family: 'Meticula';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Meticula'), local('meticula-extra-bold'), url(./assets/fonts/meticula-extra-bold.ttf) format('truetype');
+}
+
+/*  Custom font face font */
+
+@font-face {
+  font-family: 'Meticula';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Meticula'), local('Meticula-Regular'), url(./assets/fonts/meticula-light.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Meticula';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Meticula'), local('meticula-semi-bold'), url(./assets/fonts/meticula-semi-bold.ttf) format('truetype');
+}
+
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  background: none;
+}

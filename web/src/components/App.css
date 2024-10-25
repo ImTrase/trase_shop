@@ -1,0 +1,18 @@
+.overflow-y-auto::-webkit-scrollbar {
+  width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.10); /* color of the tracking area */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  padding: 3px;
+}
+
+* {
+  margin: 0;
+  overflow: hidden;
+}
