@@ -1,5 +1,19 @@
 local WEBHOOK <const> = ''
 
+CreateThread(function()
+    local URL <const> = 'https://raw.githubusercontent.com/ImTrase/versions/main/shop_system.txt'
+    local VERSION <const> = GetResourceMetadata(GetCurrentResourceName(), 'version', 0)
+
+    PerformHttpRequest(URL, function(status, body)
+        if body and status == 200 then
+            body = body:match('%d%.%d+%.%d+')
+            if VERSION < body then
+                print(('^4[Trase_Shops] ^3[INFO]^0: A new version is available. ^7(Current Version: ^1%s^7, Latest Version: ^2%s^7)'):format(VERSION, body))
+            end
+        end
+    end, 'GET')
+end)
+
 function DebugMessage(where, problem, line)
     if not Config.Debug then return end
     local msg = ('^4[TRASE_SHOP] ^6[DEBUG]^0: \n^5[%s]^0: %s\n^5[%s]^0: %s\n^5[%s]^0: %s'):format(

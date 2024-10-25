@@ -4,6 +4,7 @@ game "gta5"
 
 author 'Trase'
 description 'An advanced shop system to integrate tebex to your server'
+version '1.0.0'
 
 ui_page 'web/build/index.html'
 
@@ -30,14 +31,3 @@ files {
 	'web/build/**/*',
 	'web/images/*.png',
 }
-
-
-
---[[
-	Todo:
-	- Option to enable/disable SQL (if disabled, save all data to a json file)
-	- Add options for framework compatibility (ESX, QB, etc)
-	- Add options for customizing the UI
-	- Add options for changing text (e.g. "Coins" to "Money")
-	- Add options for VIP system
-]]
